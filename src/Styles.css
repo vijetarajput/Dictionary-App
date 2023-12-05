@@ -3,7 +3,7 @@
   margin: 0 auto;
 }
 .form {
-  background-color: rgb(247, 240, 226);
+  background-color: rgb(222, 250, 250);
   padding: 50px 30px;
 }
 .search {
@@ -13,7 +13,8 @@ h1 {
   text-align: center;
   margin: 30px;
 }
-h2 {
+h2,
+h6 {
   display: inline;
   margin: 0;
 }
@@ -28,4 +29,7 @@ h4 {
   border: 1px solid black;
   border-radius: 5px;
   background-color: lightgray;
+}
+p {
+  display: inline;
 }

@@ -6,7 +6,7 @@ import axios from "axios";
 export default function Dictionary()
 {
     let [keyword, setKeyword]=useState("");
-    let [result,setResult]=useState(null);
+    let [result,setResult]=useState("");
     function handelKeywordChange(event){
         setKeyword(event.target.value);
     }
@@ -26,7 +26,7 @@ return(
         <h1>Dictionary</h1>
         <form className="form" onSubmit={onSearchEvent}>
             <div className="search">
-            <input type="search" onChange={handelKeywordChange}/>
+            <input type="search" autoFocus={true} onChange={handelKeywordChange}/>
             <button type="submit" className="button">Submit</button>
             </div>
             <Results result={result}/>
