@@ -12,6 +12,7 @@ export default function Dictionary()
     }
 
     function handelResponse(response){
+        console.log(response.data[0]);
         setResult(response.data[0]);
     }
 

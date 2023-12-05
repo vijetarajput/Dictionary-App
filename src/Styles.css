@@ -33,3 +33,7 @@ h4 {
 p {
   display: inline;
 }
+a {
+  margin-right: 10px;
+  text-decoration: none;
+}
