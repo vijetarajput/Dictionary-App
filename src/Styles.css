@@ -1,0 +1,31 @@
+.Dictionary {
+  width: 900px;
+  margin: 0 auto;
+}
+.form {
+  background-color: rgb(247, 240, 226);
+  padding: 50px 30px;
+}
+.search {
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  margin: 30px;
+}
+h2 {
+  display: inline;
+  margin: 0;
+}
+h3,
+h4 {
+  display: inline;
+  margin: 0;
+  text-transform: capitalize;
+}
+.button {
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: lightgray;
+}
