@@ -1,19 +1,18 @@
 import React, { useState } from "react";
 import "./Dictionary.css";
+import Results from "./Results";
 import axios from "axios";
 
 export default function Dictionary()
 {
     let [keyword, setKeyword]=useState("");
-
+    let [result,setResult]=useState(null);
     function handelKeywordChange(event){
         setKeyword(event.target.value);
     }
 
     function handelResponse(response){
-        console.log(response.data[0].meanings[0].definitions[0]);
-        let value = response.data[0].meanings[0].definitions[0];
-        alert(`Searching for ${value}`);
+        setResult(response.data[0]);
     }
 
     function onSearchEvent(event)
@@ -27,5 +26,6 @@ return(
         <form onSubmit={onSearchEvent}>
             <input type="search" autoFocus={true} onChange={handelKeywordChange}/>
         </form>
+        <Results result={result}/>
     </div>);
 }
