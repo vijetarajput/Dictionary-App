@@ -8,7 +8,7 @@ export default function Synonyms(props){
                 <h6>Synonyms: </h6>
                 {props.synonyms.map(function(synonym, index)
                 {
-                    return <li key={index}>{synonym}</li>
+                    return <li key={index}>{synonym},</li>
                 })}
             </div>
         );

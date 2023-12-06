@@ -1,12 +1,26 @@
-.Dictionary {
-  width: 900px;
-  margin: 0 auto;
+body {
+  background-color: #f9f8fe;
 }
 .form {
-  background-color: rgb(222, 250, 250);
-  padding: 50px 30px;
+  text-align: center;
 }
-.search {
+.Dictionary section {
+  background-color: white;
+  padding: 30px;
+  border-radius: 6px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+.Dictionary input {
+  width: 50%;
+  padding: 6px 9px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  color: #333;
+}
+.hint {
+  font-size: 15px;
+  opacity: 0.7;
   text-align: center;
 }
 h1 {
@@ -18,11 +32,15 @@ h6 {
   display: inline;
   margin: 0;
 }
-h3,
+.Meaning {
+  margin-bottom: 30px;
+}
+.Word h3,
 h4 {
   display: inline;
   margin: 0;
   text-transform: capitalize;
+  line-height: 1.5;
 }
 .button {
   margin: 10px;
@@ -36,4 +54,18 @@ p {
 a {
   margin-right: 10px;
   text-decoration: none;
+}
+.Phonetics-a {
+  border: 1px solid lightgray;
+  border-radius: 50%;
+}
+.Phonetics-a:hover {
+  background-color: wheat;
+}
+.Synonyms {
+  margin: 5px 0;
+}
+.Synonyms li {
+  display: inline-block;
+  padding-right: 10px;
 }
